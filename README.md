@@ -1,14 +1,14 @@
-# Neuroimaging Signatures of Structural MRI in SI/SA MDD vs Non-MDD using ROI-Aware GCN
+# Neuroimaging Signatures of Structural MRI in SI/SA MDD vs Non-MDD using ROI-Aware GCN :rocket: :rocket: :rocket:
 
 This project utilizes Graph Neural Networks (GNNs), particularly ROI-aware Graph Convolutional Networks (GCN), to identify neuroimaging signatures associated with suicide attempts and major depressive disorder (MDD). The analysis combines multiple structural MRI features such as cortical thickness, surface area, volume, and sulcal depth using various brain parcellation schemes (Desikan, Destrieux, Fuzzy Clustering).
 
-## Features
+## Features :star:
 
 - **Mutual Learning GCN**: The model learns from multiple parcellation schemes (Desikan, Destrieux, Fuzzy Clustering) to identify neurobiological markers.
 - **Feature Extraction**: Structural MRI features (T1 intensity, cortical thickness, surface area, sulcal depth, volume) are merged across different parcellations.
 - **Statistical Analysis**: Group comparisons between SI/SA with MDD vs without MDD are performed using node embeddings extracted from the GCN models, with significant regions identified through t-tests.
 
-## Directory Structure
+## Directory Structure :star:
 
 - **README.md**
 - **requirements.txt**
@@ -29,23 +29,23 @@ This project utilizes Graph Neural Networks (GNNs), particularly ROI-aware Graph
 - **analysis.py**: Analysis and statistical tests (e.g., t-test)
 - **data_loader.py**: Data loader for structural MRI and demographic data
 
-## Dataset
+## Dataset :star:
 
 We use structural neuroimaging data from the Adolescent Brain Cognitive Development (ABCD) study, focusing on T1-weighted MRI data for two groups: - SI/SA with MDD: Individuals with suicidal ideation or attempts who also meet criteria for major depressive disorder. - SI/SA without MDD: Individuals with suicidal ideation or attempts but without major depressive disorder. The structural data includes multiple features such as T1 intensity, cortical thickness, sulcal depth, surface area, and volume across different parcellations (Desikan, Destrieux, and fuzzy clustering).
 
-## Models
+## Models :star:
 
 * **ROI-aware GCN**: A graph neural network model designed to utilize region-specific information to learn embeddings for brain regions based on MRI features and demographic data.
 
 - **Mutual Learning GCN**: A model that simultaneously trains on multiple parcellations (Desikan, Destrieux, fuzzy clustering) to enable better generalization and learning across scales.
 
-## Data
+## Data :star:
 
 - `demo_data.csv`: Contains demographic information (gender, age, marital status, race, education, income).
 - `roi_data.csv`: Contains structural MRI features (T1 intensity, cortical thickness, surface area, sulcal depth, volume) for various brain regions.
 - `edge_index_data.csv`: Contains adjacency matrices for the brain regions based on anatomical proximity and feature correlation.
 
-## Usage
+## Usage :star:
 
 ### Training the Model
 
